@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>IOT-Enabled System</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <h1 class="block-effect" style="--td: 1.2s">
+        <div class="block-reveal" style="text-align: center; --bc: #4040bf; --d: .1s">Smart</div>
+        <div class="block-reveal" style="--bc: #bf4060; --d: .5s">Parking/Toll-Based System</div>
+    </h1>
+    <div class="container">
+        <div><b>Distance: </b><span class="dist" id="val">10</span></div>
+        <div class="bulb" id="bulb"></div>
+        <p id="length"></p>
+
+        <table id="mapTable">
+            <thead>
+                <tr>
+                    <th>Plate</th>
+                    <th>Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Table rows will be dynamically added here -->
+            </tbody>
+        </table>
+        <!-- <button onclick="toggleLight()">Toggle Light</button> -->
+    </div>
+
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+
+    <script type="module" src="script.js"></script>
+    <script type="module" src="script1.js"></script>
+</body>
+
+</html>
